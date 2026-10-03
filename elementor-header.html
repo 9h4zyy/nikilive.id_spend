@@ -1,0 +1,153 @@
+<!-- Site Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Logo Branding -->
+      <a href="/" class="header-brand" aria-label="Niki Live Agency Home">
+        <img 
+          src="https://nikilive.id/wp-content/uploads/2023/08/unnamed.webp" 
+          alt="Official Niki Live Agency Partner Logo" 
+          class="header-logo-img"
+          width="120"
+          height="44"
+          loading="lazy"
+          fetchpriority="high"
+        >
+        <span class="header-brand-text">Niki Live</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about-nikilive" class="nav-link">About Us</a></li>
+          <li><a href="/become-a-host" class="nav-link">Become Host</a></li>
+          <li><a href="/become-a-agent" class="nav-link">Become Agent</a></li>
+          <li><a href="/tutorial-host" class="nav-link">Tutorial Host</a></li>
+          <li><a href="/tutorial-agent" class="nav-link">Tutorial Agent</a></li>
+          <li><a href="/coin-seller" class="nav-link">Coin Seller</a></li>
+          <li><a href="/download-niki" class="nav-link">Download</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="/become-a-host" class="btn btn-primary btn-header-cta">Join Now</a>
+        <button 
+          type="button" 
+          class="mobile-menu-toggle" 
+          id="mobile-menu-toggle" 
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="/" class="mobile-nav-link">Home</a></li>
+        <li><a href="/about-nikilive" class="mobile-nav-link">About Us</a></li>
+        <li><a href="/become-a-host" class="mobile-nav-link">Become Host</a></li>
+        <li><a href="/become-a-agent" class="mobile-nav-link">Become Agent</a></li>
+        <li><a href="/tutorial-host" class="mobile-nav-link">Tutorial Host</a></li>
+        <li><a href="/tutorial-agent" class="mobile-nav-link">Tutorial Agent</a></li>
+        <li><a href="/coin-seller" class="mobile-nav-link">Coin Seller</a></li>
+        <li><a href="/download-niki" class="mobile-nav-link">Download</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="/become-a-host" class="btn btn-primary">Join as Host</a>
+        <a href="/become-a-agent" class="btn btn-secondary">Join as Agency</a>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    (function () {
+      const header = document.getElementById('site-header');
+      const toggleBtn = document.getElementById('mobile-menu-toggle');
+      const drawer = document.getElementById('mobile-drawer');
+
+      // Auto highlight active nav link based on current page URL
+      function updateActiveNavLink() {
+        function normalize(url) {
+          if (!url) return '/';
+          try {
+            if (url.startsWith('http://') || url.startsWith('https://')) {
+              url = new URL(url).pathname;
+            }
+          } catch (e) {}
+          let p = url.split('?')[0].split('#')[0];
+          p = p.replace(/\.html$/, '');
+          p = p.replace(/\/index$/, '');
+          p = p.replace(/\/+$/, '');
+          return p === '' ? '/' : p;
+        }
+
+        const currentPath = normalize(window.location.pathname);
+        const allLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+
+        allLinks.forEach(function (link) {
+          const href = link.getAttribute('href');
+          const linkPath = normalize(href);
+
+          if (linkPath === currentPath) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+
+      updateActiveNavLink();
+
+      if (toggleBtn && drawer) {
+        toggleBtn.addEventListener('click', function () {
+          const isOpen = drawer.classList.toggle('is-open');
+          toggleBtn.classList.toggle('is-active', isOpen);
+          toggleBtn.setAttribute('aria-expanded', isOpen);
+          drawer.setAttribute('aria-hidden', !isOpen);
+          document.body.classList.toggle('nav-open', isOpen);
+        });
+
+        // Close drawer when clicking a link
+        const mobileLinks = drawer.querySelectorAll('.mobile-nav-link, .mobile-drawer-cta a');
+        mobileLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            drawer.classList.remove('is-open');
+            toggleBtn.classList.remove('is-active');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('nav-open');
+          });
+        });
+
+        // Close drawer when clicking outside
+        document.addEventListener('click', function (e) {
+          if (drawer.classList.contains('is-open')) {
+            if (!drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+              drawer.classList.remove('is-open');
+              toggleBtn.classList.remove('is-active');
+              toggleBtn.setAttribute('aria-expanded', 'false');
+              drawer.setAttribute('aria-hidden', 'true');
+              document.body.classList.remove('nav-open');
+            }
+          }
+        });
+      }
+
+      // Add scroll effect on sticky header
+      window.addEventListener('scroll', function () {
+        if (header) {
+          if (window.scrollY > 20) {
+            header.classList.add('is-scrolled');
+          } else {
+            header.classList.remove('is-scrolled');
+          }
+        }
+      });
+    })();
+  </script>
