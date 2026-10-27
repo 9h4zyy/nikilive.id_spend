@@ -1,0 +1,42 @@
+- main [ref=f3e2]:
+  - region [ref=f3e3]:
+    - generic [ref=f3e5]:
+      - heading "Download Niki Live for Android or iOS" [level=1] [ref=f3e6]:
+        - generic [ref=f3e7]: Download Niki Live
+        - text: for Android or iOS
+      - generic [ref=f3e8]:
+        - generic [ref=f3e9]: Happy to Have You!
+        - generic: Pleased to Meet You!
+        - generic: Ready to Help You!
+        - generic: Can’t Wait for You!
+      - generic [ref=f3e10]:
+        - link "GET IT ON Google Play" [ref=f3e11] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.nikilive.app
+          - generic [ref=f3e18]:
+            - generic [ref=f3e19]: GET IT ON
+            - generic [ref=f3e20]: Google Play
+        - link "Download on the App Store" [ref=f3e21] [cursor=pointer]:
+          - /url: https://apps.apple.com/app/niki-live/id6448375815
+          - generic [ref=f3e25]:
+            - generic [ref=f3e26]: Download on the
+            - generic [ref=f3e27]: App Store
+      - region "Niki Live Application Screenshots Carousel" [ref=f3e28]:
+        - generic [aria-hidden]:
+          - generic: Live Streaming & Host Interaktif
+        - generic [aria-hidden]:
+          - generic: Audio Party & Luxury Gifts
+        - generic [ref=f3e29]:
+          - button "Lihat tangkapan layar sebelumnya" [ref=f3e30] [cursor=pointer]
+          - generic [ref=f3e35]:
+            - img "Niki Live Ruang Live Streaming Interaktif dan Komunitas Pengguna" [ref=f3e37]
+            - img "Niki Live Pesta Suara dan Audio Room Komunitas Seru" [ref=f3e39]
+            - img "Niki Live Hadiah Virtual dan Efek Animasi Mewah" [ref=f3e41]
+            - img "Niki Live Mini Games Interaktif dan Tantangan Seru" [ref=f3e43]
+            - img "Niki Live Profil Pengguna dan Pusat Hadiah Eksklusif" [ref=f3e45]
+          - button "Lihat tangkapan layar berikutnya" [ref=f3e46] [cursor=pointer]
+        - tablist "Navigasi slide tangkapan layar" [ref=f3e49]:
+          - tab "Tangkapan layar 1" [selected] [ref=f3e50] [cursor=pointer]
+          - tab "Tangkapan layar 2" [ref=f3e51] [cursor=pointer]
+          - tab "Tangkapan layar 3" [ref=f3e52] [cursor=pointer]
+          - tab "Tangkapan layar 4" [ref=f3e53] [cursor=pointer]
+          - tab "Tangkapan layar 5" [ref=f3e54] [cursor=pointer]

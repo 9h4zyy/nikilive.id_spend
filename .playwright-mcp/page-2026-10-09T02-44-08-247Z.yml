@@ -1,0 +1,40 @@
+- main [ref=f2e2]:
+  - region [ref=f2e3]:
+    - generic [ref=f2e5]:
+      - heading "Download Niki Live for Android or iOS" [level=1] [ref=f2e6]:
+        - generic [ref=f2e7]: Download Niki Live
+        - text: for Android or iOS
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]: Happy to Have You!
+        - generic: Pleased to Meet You!
+        - generic: Ready to Help You!
+        - generic: Can’t Wait for You!
+      - generic [ref=f2e10]:
+        - link "GET IT ON Google Play" [ref=f2e11] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.nikilive.app
+          - generic [ref=f2e18]:
+            - generic [ref=f2e19]: GET IT ON
+            - generic [ref=f2e20]: Google Play
+        - link "Download on the App Store" [ref=f2e21] [cursor=pointer]:
+          - /url: https://apps.apple.com/app/niki-live/id6448375815
+          - generic [ref=f2e25]:
+            - generic [ref=f2e26]: Download on the
+            - generic [ref=f2e27]: App Store
+      - region "Niki Live Application Screenshots Carousel" [ref=f2e28]:
+        - generic [aria-hidden] [ref=f2e37]: Live Streaming & Host Interaktif
+        - generic [aria-hidden] [ref=f2e39]: Audio Party & Luxury Gifts
+        - generic [ref=f2e43]:
+          - button "Lihat tangkapan layar sebelumnya" [ref=f2e44] [cursor=pointer]
+          - generic [ref=f2e49]:
+            - img "Niki Live Ruang Live Streaming Interaktif dan Komunitas Pengguna" [ref=f2e51]
+            - img "Niki Live Pesta Suara dan Audio Room Komunitas Seru" [ref=f2e53]
+            - img "Niki Live Hadiah Virtual dan Efek Animasi Mewah" [ref=f2e55]
+            - img "Niki Live Mini Games Interaktif dan Tantangan Seru" [ref=f2e57]
+            - img "Niki Live Profil Pengguna dan Pusat Hadiah Eksklusif" [ref=f2e59]
+          - button "Lihat tangkapan layar berikutnya" [ref=f2e60] [cursor=pointer]
+        - tablist "Navigasi slide tangkapan layar" [ref=f2e63]:
+          - tab "Tangkapan layar 1" [selected]
+          - tab "Tangkapan layar 2"
+          - tab "Tangkapan layar 3"
+          - tab "Tangkapan layar 4"
+          - tab "Tangkapan layar 5"

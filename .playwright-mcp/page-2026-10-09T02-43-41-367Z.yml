@@ -1,0 +1,23 @@
+- main [ref=f1e2]:
+  - region [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - heading "Download Niki Live for Android or iOS" [level=1] [ref=f1e6]:
+        - generic [ref=f1e7]: Download Niki Live
+        - text: for Android or iOS
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]: Happy to Have You!
+        - generic: Pleased to Meet You!
+        - generic: Ready to Help You!
+        - generic: Can’t Wait for You!
+      - generic [ref=f1e10]:
+        - link "GET IT ON Google Play" [ref=f1e11] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.nikilive.app
+          - generic [ref=f1e18]:
+            - generic [ref=f1e19]: GET IT ON
+            - generic [ref=f1e20]: Google Play
+        - link "Download on the App Store" [ref=f1e21] [cursor=pointer]:
+          - /url: https://apps.apple.com/app/niki-live/id6448375815
+          - generic [ref=f1e25]:
+            - generic [ref=f1e26]: Download on the
+            - generic [ref=f1e27]: App Store
+      - img "Niki Live Live Streaming Application on Modern Smartphones" [ref=f1e30]

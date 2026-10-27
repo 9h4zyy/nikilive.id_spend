@@ -22,25 +22,113 @@
             </div>
           </div>
 
-          <!-- Hero Visual with 100% Transparent Cutout -->
+          <!-- Hero Visual with Modern Staging & Floating Ornaments -->
           <div class="hero-visual-wrapper">
             <div class="hero-stage-art">
-              <!-- Radiant Backdrop Stage Disc -->
-              <div class="stage-disc" aria-hidden="true">
-                <div class="disc-glow"></div>
-                <div class="orbital-ring"></div>
+              <!-- Multi-layered Ambient Light Aura -->
+              <div class="stage-ambient-glow" aria-hidden="true"></div>
+              <div class="stage-pedestal-blur" aria-hidden="true"></div>
+
+              <!-- Animated Glowing Motion Lines -->
+              <div class="stage-motion-lines" aria-hidden="true">
+                <svg class="motion-lines-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="orbitGradTutHost1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#8dfefa" stop-opacity="0.85"/>
+                      <stop offset="50%" stop-color="#00c7c3" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#fbc331" stop-opacity="0.85"/>
+                    </linearGradient>
+                    <linearGradient id="orbitGradTutHost2" x1="100%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#fbc331" stop-opacity="0.8"/>
+                      <stop offset="50%" stop-color="#ff3366" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="#00c7c3" stop-opacity="0.8"/>
+                    </linearGradient>
+                  </defs>
+                  <ellipse class="stream-line line-outer" cx="250" cy="250" rx="215" ry="195" stroke="url(#orbitGradTutHost1)" stroke-width="1.6" stroke-dasharray="16 20"/>
+                  <ellipse class="stream-line line-inner" cx="250" cy="250" rx="175" ry="160" stroke="url(#orbitGradTutHost2)" stroke-width="1.4" stroke-dasharray="12 24"/>
+                  <path class="stream-line line-wave-1" d="M 60,200 C 120,110 380,90 440,230" stroke="url(#orbitGradTutHost1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="90 180"/>
+                  <path class="stream-line line-wave-2" d="M 70,310 C 130,410 370,410 430,290" stroke="url(#orbitGradTutHost2)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="70 150"/>
+                </svg>
+              </div>
+
+              <!-- Modern Livestream Decorative Ornaments -->
+              <!-- 1. Shimmering 4-Point Stars -->
+              <div class="hero-ornament ornament-sparkle sparkle-1" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"/>
+                </svg>
+              </div>
+              <div class="hero-ornament ornament-sparkle sparkle-2" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"/>
+                </svg>
+              </div>
+              <div class="hero-ornament ornament-sparkle sparkle-3" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"/>
+                </svg>
+              </div>
+              <div class="hero-ornament ornament-sparkle sparkle-4" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"/>
+                </svg>
+              </div>
+
+              <!-- 2. Floating Live Microphone Reaction Orb (Top Right) -->
+              <div class="hero-ornament ornament-reaction reaction-mic" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" y1="19" x2="12" y2="23"></line>
+                  <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+              </div>
+
+              <!-- 3. Floating Gemstone Crystal Orb (Bottom Right) -->
+              <div class="hero-ornament ornament-reaction reaction-gem" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 3h12l4 6-10 13L2 9z"></path>
+                  <path d="M11 3v6l-4 4"></path>
+                  <path d="M13 3v6l4 4"></path>
+                </svg>
+              </div>
+
+              <!-- 4. Floating Golden Star Orb (Middle Left) -->
+              <div class="hero-ornament ornament-reaction reaction-star" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbc331" stroke="#fbc331" stroke-width="1.5">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+
+              <!-- 5. Floating Heart Love Reaction Orb (Upper Left) -->
+              <div class="hero-ornament ornament-reaction reaction-heart" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
               </div>
 
               <!-- Transparent Host Streamer Cutout -->
               <div class="portrait-float">
                 <img 
-                  src="https://nikilive.id/wp-content/uploads/2026/10/host-hero-trans.png" 
+                  src="https://nikilive.id/wp-content/uploads/2026/10/Hero-Page-Tutorial-Host.png" 
                   alt="Official Niki Live Host Broadcaster Tutorial and Guidelines" 
-                  class="hero-img-cutout" 
+                  class="hero-img-cutout img-fade-bottom" 
                   width="560" 
                   height="560" 
                   fetchpriority="high"
                 >
+
+                <!-- Floating Modern Glass Dock Stand covering bottom transition -->
+                <div class="stage-dock-glass" aria-hidden="true">
+                  <div class="dock-badge-inner">
+                    <span class="dock-title">Host Tutorial &amp; Guide</span>
+                    <span class="dock-star-icon">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#fbc331">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -484,7 +572,7 @@
             <h2 class="cta-banner-title" id="cta-banner-heading">Start your livestream host career with an official agency partner</h2>
             <p class="cta-banner-desc">Free to register with full guide and mentoring from us. Start whenever you want, we are always ready to help you start.</p>
             <div class="cta-banner-buttons">
-              <a href="/become-a-host" class="btn btn-white" id="cta-bottom-host">Join as Host</a>
+              <a href="https://nm4138jpcid.akamaized.net/agent/invite/landing?uid=63555330&token=63555330&lang=en&_app=niki&imgId=&channelId=copy&templateId=1" target="_blank" rel="noopener noreferrer" class="btn btn-white" id="cta-bottom-host">Join as Host</a>
               <a href="https://wa.me/601113244099" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" id="cta-bottom-contact">Contact our Team</a>
             </div>
           </div>
